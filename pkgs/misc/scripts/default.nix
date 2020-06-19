@@ -4,7 +4,7 @@ with stdenv.lib;
 
 stdenv.mkDerivation rec {
   version = "1.0.1";
-  baseName = "peel-scripts";
+  baseName = "orther-scripts";
   name = "${baseName}-${version}";
 
   buildInputs = [ pkgs.makeWrapper ];

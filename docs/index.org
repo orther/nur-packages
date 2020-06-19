@@ -1,18 +1,21 @@
-#+TITLE: nur.codearsonist.com
+#+TITLE: nur.orther.dev
 #+SUBTITLE: NixOS, nix-darwin User Repository
-#+AUTHOR: Piotr @peel Limanowski
-#+DESCRIPTION: @peel's Nix User Repository for NixOS and nix-darwin
+#+AUTHOR: Brandon Orther @orther 
+#+DESCRIPTION: @orther's Nix User Repository for NixOS and nix-darwin
 #+LICENSE: Creative Commons 0
 #+OPTIONS: toc:nil
-#+KEYWORDS: code arsonist, codearsonist, limanowski, piotr limanowski, scala, elixir, erlang, haskell
-#+HTML_HEAD_EXTRA: <link rel="shortcut icon" href="https://codearsonist.com/favicon.ico" />
+#+KEYWORDS: orther, orther.dev, orther, brandon orther, scala, elixir, erlang, haskell
+#+HTML_HEAD_EXTRA: <link rel="shortcut icon" href="https://orther.dev/favicon.ico" />
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://codearsonist.com/assets/css/screen.css" />
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="style.css" />
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500" />
 
+* Forked from @peel's repo 
+See https://nur.codearsonist.com
+
 * Status
-[[https://travis-ci.org/peel/nur-packages][https://travis-ci.org/peel/nur-packages.svg]]
-[[https://peel.cachix.org][https://img.shields.io/badge/cachix-peel-blue.svg]]
+[[https://travis-ci.org/orther/nur-packages][https://travis-ci.org/orther/nur-packages.svg]]
+[[https://orther.cachix.org][https://img.shields.io/badge/cachix-orther-blue.svg]]
 #+NAME: expressions
 #+BEGIN_SRC elisp :var path="../" ext="nix":type :exports none
 (defun match (base-path path ext)
@@ -79,8 +82,9 @@ NixOS and Darwin packages
 - [[file:./../pkgs/tools/security/gopass/default.nix]]
 - [[file:./../pkgs/default.nix]]
 
-#+ATTR_HTML: :alt codearsonist.com image :title codearsonist.com
-[[https://codearsonist.com/assets/img/bloglogo.png]]
+#+ATTR_HTML: :alt orther.dev image :title orther.dev
+[[https://orther.dev/android-chrome-192x192.png]]
+
 
 * HTML :noexport:
 #+NAME: site-specific-css
