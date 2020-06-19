@@ -7,8 +7,8 @@ sudo: yes
 
 env:
   global:
-    - CACHIX_CACHE=peel
-    - NUR_REPO=peel/nur-packages
+    - CACHIX_CACHE=orther
+    - NUR_REPO=orther/nur-packages
     
 matrix:
   allow_failures:
@@ -30,7 +30,7 @@ before_install:
    - sudo mkdir -p /etc/nix
    - echo "trusted-users = root $USER" | sudo tee -a /etc/nix/nix.conf
    - echo 'require-sigs = false' | sudo tee -a /etc/nix/nix.conf > /dev/null
-   - echo "substituters = https://cache.nixos.org/ https://peel.cachix.org https://cachix.cachix.org file://$HOME/nix.store" | sudo tee -a /etc/nix/nix.conf > /dev/null
+   - echo "substituters = https://cache.nixos.org/ https://orther.cachix.org https://cachix.cachix.org file://$HOME/nix.store" | sudo tee -a /etc/nix/nix.conf > /dev/null
    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo launchctl stop org.nixos.nix-daemon; fi 
    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo launchctl start org.nixos.nix-daemon && sleep 5; fi
 
@@ -62,6 +62,6 @@ deploy:
   keep-history: true
   local-dir: docs
   target-branch: gh-pages
-  fqdn: nur.codearsonist.com
+  fqdn: nur.orther.dev
   on:
     branch: master
